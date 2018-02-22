@@ -1,0 +1,10 @@
+<p>
+  my-home works!
+</p>
+
+<ul>
+  <li *ngFor='let movie of movieArray'>
+   <p>{{movie.title}}</p>
+    <a [routerLink]="['/movie', movieSelected]">view more</a>
+  </li>
+</ul>
